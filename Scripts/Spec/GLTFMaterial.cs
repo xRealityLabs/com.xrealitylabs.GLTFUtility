@@ -27,7 +27,7 @@ namespace Siccity.GLTFUtility {
 		[JsonConverter(typeof(ColorRGBConverter))] public Color emissiveFactor = Color.black;
 		[JsonConverter(typeof(EnumConverter))] public AlphaMode alphaMode = AlphaMode.OPAQUE;
 		public float alphaCutoff = 0.5f;
-		public bool doubleSided = false;
+		public bool doubleSided = true;
 		public Extensions extensions;
 		public JObject extras;
 
