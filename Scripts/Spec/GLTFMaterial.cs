@@ -62,10 +62,9 @@ namespace Siccity.GLTFUtility {
 			Material mat = null;
 			IEnumerator en = null;
 			// Load metallic-roughness materials
-			Shader mrtkShader = Shader.Find("Graphics Tools/Standard");
-			if (mrtkShader != null)
+			if (shaderSettings.overrideMaterial != null)
 			{
-				var material = new Material(mrtkShader)
+				var material = new Material(shaderSettings.overrideMaterial)
 				{
 					name = string.IsNullOrEmpty(name) ? $"glTF Material " : name
 				};
