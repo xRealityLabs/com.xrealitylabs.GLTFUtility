@@ -81,7 +81,7 @@ namespace Siccity.GLTFUtility {
 						name = string.IsNullOrEmpty(name) ? $"glTF Material " : name
 					};
 				}
-				
+
 				material.EnableKeyword("_DIRECTIONAL_LIGHT");
 				material.EnableKeyword("_SPECULAR_HIGHLIGHTS");
 				if (pbrMetallicRoughness.baseColorTexture?.index >= 0)
